@@ -173,3 +173,8 @@ footer, header, hgroup, menu, nav, section {
 .navigation__link--white {
     color: var(--color-white);
 }
+
+.time {
+    font-size: small;
+    color: gray;
+}

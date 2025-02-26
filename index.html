@@ -36,8 +36,10 @@
 		<section class="left" id="updates">
                     <h2><img src="assets/news_icon.png" class="center" style="float:left;" width="40" height="40"> News</h2>
                     <p>Releases are not yet final and may contain bugs. Before installation please backup your game instance to avoid data loss.</p>
-                    <a href="">Snapshot 0.3.2d</a>
+                    <a href="https://github.com/SF-24/Minecraft-2.0-new/releases/tag/client-v0.3.2d">Snapshot 0.3.2d (Client)</a>
                     <p id="news_032d" class="time">26 February 2025</p>
+                    <a href="https://github.com/SF-24/Minecraft-2.0-server/releases/tag/server-v0.3.2d">Snapshot 0.3.2d (Server)</a>
+                    <p id="news_032d_server" class="time">26 February 2025</p>
 					<p>Note: changelogs of previous releases will be added retroactively</p>
 		</section>
 		<section class="right" id="community">
@@ -51,13 +53,15 @@
 <script>
 
 	var today = new Date();
-	var date032d = new Date("2022-12-25");
+	var date032d = new Date("2025-02-26");
 	var timefrom_032d = Math.round((today - date032d) / (1000 * 60 * 60 * 24));
 
-	$(document).ready(function() {
-		$("#news_032d").text(timefrom_032d + " days ago");
-	});
+	document.getElementById("news_032d_server").innerText=timefrom_032d + getplural(timefrom_032d);
+	document.getElementById("news_032d").innerText=timefrom_032d + getplural(timefrom_032d);
 
+	function getplural(number) {
+		if(number !==1) {return " days ago"} else {return " day ago"}
+	}
 
 	fetch('https://mcreawakened.github.io/header.html')
 			.then((response) => {
