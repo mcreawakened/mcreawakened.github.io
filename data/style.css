@@ -34,6 +34,11 @@ body {
     color: var(--color-bright);
 }
 
+.server_download {
+    margin-top: 0.5em;
+}
+
+
 .main {
     display: flex;
     place-content: center;
