@@ -16,8 +16,7 @@
 
 
 header {
-    height: 48	px;
-    background: dirt.png;
+    height: 48px;
 	margin-bottom: 2em;
 	padding-left: var(--padding);
 	padding-right: var(--padding);
