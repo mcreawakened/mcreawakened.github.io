@@ -1,0 +1,36 @@
+<html lang="en_uk">
+<head>
+  <link rel="stylesheet" href="data/style.css">
+  <title>Header</title>
+</head>
+<body>
+  <section style="display:flex" class="bottom">
+      <section class="left" id="updates">
+        <h2><img src="assets/news_icon.png" class="center" style="float:left;" width="40" height="40"> News</h2>
+        <p>Releases are not yet final and may contain bugs. Before installation please backup your game instance to avoid data loss.</p>
+        <a href="https://github.com/SF-24/Minecraft-2.0-new/releases/tag/client-v0.3.2d">Snapshot 0.3.2d (Client)</a>
+        <p id="news_032d" class="time">26 February 2025</p>
+        <a href="https://github.com/SF-24/Minecraft-2.0-server/releases/tag/server-v0.3.2d">Snapshot 0.3.2d (Server)</a>
+        <p id="news_032d_server" class="time">26 February 2025</p>
+        <p>Note: changelogs of previous releases will be added retroactively</p>
+      </section>
+      <section class="right" id="community">
+        <h2><img src="assets/planet_icon.png" class="center" style="float:left;" width="40" height="40"> More Info</h2>
+        <p>Minecraft 2.0 is a custom version of Minecraft forked from 1.8.9</p>
+        <p>It is designed to improve upon it and add more content, while preserving the classic theme of the game</p>
+      </section>
+    </section>
+</body>
+<script>
+  var today = new Date();
+  var date032d = new Date("2025-02-26");
+  var timefrom_032d = Math.round((today - date032d) / (1000 * 60 * 60 * 24));
+
+  document.getElementById("news_032d_server").innerText=timefrom_032d + getplural(timefrom_032d);
+  document.getElementById("news_032d").innerText=timefrom_032d + getplural(timefrom_032d);
+
+  function getplural(number) {
+    if(number !==1) {return " days ago"} else {return " day ago"}
+  }
+</script>
+</html>

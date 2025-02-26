@@ -15,30 +15,23 @@
 	<div id="headerDiv"></div>
 
     <main class="main" aria-label="Main">
-        <section aria-label="Content">
-			<img class="media" src="assets/cape.png">
-			A demonstration of the new Christmas cape
-			</img>
-			<p>Welcome to Mineshaft!</p>
-
-        </section>
-		<aside class="aside">
-					<picture>
-						<source type="image/png" srcset="assets/steve.png">
-						<img src="assets/steve.png" width="300" height="202" alt="Left to right: A pig, Steve, and a sheep">
-					</picture>
-					<a href="https://github.com/SF-24/Minecraft-2.0-new/releases" class="big_button button button--orange">Download Now!</a>
-				<br>
-			</aside>
 	</main>
 	<br><br><br>
-
 	<div id="updateDiv"></div>
 	<div id="footerDiv"></div>
 </body>
 <script>
 
+	var today = new Date();
+	var date032d = new Date("2025-02-26");
+	var timefrom_032d = Math.round((today - date032d) / (1000 * 60 * 60 * 24));
 
+	document.getElementById("news_032d_server").innerText=timefrom_032d + getplural(timefrom_032d);
+	document.getElementById("news_032d").innerText=timefrom_032d + getplural(timefrom_032d);
+
+	function getplural(number) {
+		if(number !==1) {return " days ago"} else {return " day ago"}
+	}
 
 	fetch('https://mcreawakened.github.io/header.html')
 			.then((response) => {
@@ -54,12 +47,12 @@
 					.then((html) => {
 						document.getElementById('footerDiv').innerHTML = html
 					});
-			fetch('https://mcreawakened.github.io/updates.html')
-					.then((response) => {
-						return response.text();
-					})
-					.then((html) => {
-						document.getElementById('updateDiv').innerHTML = html
-					});
+	fetch('https://mcreawakened.github.io/updates.html')
+			.then((response) => {
+				return response.text();
+			})
+			.then((html) => {
+				document.getElementById('updateDiv').innerHTML = html
+			});
 </script>
 
