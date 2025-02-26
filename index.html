@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+	<title>Mineshaft</title>
+	<link rel="stylesheet" href="data/style.css">
+    <style>
+      body {
+        background-image: url('assets/bg.png');
+        background-attachment: fixed;
+        background-position: center;
+      }
+	  header {
+        background-image: url('assets/dirt.png');
+        background-position: center;
+      }
+    </style>	
+
+</head>
+<body>
+    <header class="header" aria-label="Header">
+        <nav aria-label="Navi" class="navigation">
+            <a class="navigation__home" href="" title="Homepage" aria-label="Go to homepage">
+                <img class="logo" alt="Mineshaft" src="assets/logo.png" height="40" width="248">
+            </a>
+            <div class="navigation__links navigation__links--start" aria-label="Site navigation">
+                <a class="navigation__link navigation__link--white" href="">1</a>
+                <a class="navigation__link navigation__link--white" href="">2</a>
+                <a class="navigation__link navigation__link--white" href="">3</a>
+                
+            </div>
+            <div class="navigation__links navigation__links--end" aria-label="Account navigation">
+                
+                <a class="navigation__link" href="">Log in</a>
+            </div>
+        </nav>
+    </header>
+    <main class="main" aria-label="Main">
+        <section aria-label="Content">
+			<img class="media" src="assets/cape.png">
+			A demonstration of the new Christmas cape
+			</img>
+			<p>Welcome to Mineshaft!</p>
+			
+        </section>
+		<aside class="aside">
+					<picture>
+						<source type="image/png" srcset="assets/steve.png">
+						<img src="assets/steve.png" width="300" height="202" alt="Left to right: A pig, Steve, and a sheep">
+					</picture>
+					<a href="" class="big_button button button--orange">Download Now!</a>
+				<br>
+			</aside>
+	</main>			
+	<br><br><br>
+	<section style="display:flex" class="bottom">
+		<section class="left" id="updates">
+                    <h2><img src="assets/news_icon.png" class="center" style="float:left;" width="40" height="40"> News</h2>
+                    <p>This is a header</p>
+                    <a href="">Placeholder</a>
+                    <p id="news1" class="time">date here</p>
+		</section>
+		<section class="right" id="community">
+		<h2><img src="assets/planet_icon.png" class="center" style="float:left;" width="40" height="40"> More Info</h2>
+		</section>
+	</section>
+	<footer class="footer" aria-label="Footer">
+		Mineshaft (KittensCraft) 2017-2024
+	</footer>
+</body>
