@@ -25,7 +25,6 @@
   var today = new Date();
   var date032d = new Date("2025-02-26");
   var timefrom_032d = Math.round((today - date032d) / (1000 * 60 * 60 * 24));
-
   document.getElementById("news_032d_server").innerText=timefrom_032d + getplural(timefrom_032d);
   document.getElementById("news_032d").innerText=timefrom_032d + getplural(timefrom_032d);
 
