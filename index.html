@@ -59,14 +59,12 @@
 </body>
 <script>
 	document.getElementById('headerDiv').innerHTML =
-			fetch('header.html')
+			fetch('https://mcreawakened.github.io/header.html')
 			.then((response) => {
 				return response.text();
 			})
 			.then((html) => {
-				document.body.innerHTML = html
+				document.body.innerHTML = panel
 			});
-
-	document.getElementById('footer').innerHTML = fetch('footer.html').then(response => response.text());
 </script>
 
