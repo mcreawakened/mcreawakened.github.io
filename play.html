@@ -6,22 +6,6 @@
     <script src="https://cjrtnc.leaningtech.com/3.1/cj3loader.js"></script>
 </head>
 <body>
-<canvas id="lwjgl" width="800" height="600"></canvas>
-<script>
-    window.lwjglCanvasElement = document.getElementById("lwjgl");
-    (async function () {
-        await cheerpjInit({
-            javaProperties: ["java.library.path=/app/cheerpj-natives/natives"]
-        });
-        cheerpjCreateDisplay(800, 600);
-        window.lwjglCanvasElement = document.getElementById("lwjgl");
-        await cheerpjRunJar(
-            "/app/play/play.jar",
-            "--username Steve",
-            "--uuid 00000000"
-        );
-
-    })();
-</script>
+<applet classId="net.minecraft.Run" code="play/play.class" width=800 height=600></applet>
 </body>
 </html>
