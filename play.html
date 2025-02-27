@@ -6,10 +6,15 @@
     <script src="https://cjrtnc.leaningtech.com/3.1/cj3loader.js"></script>
 </head>
 <body>
+<canvas id="lwjgl" width="800" height="600"></canvas>
 <script>
+    window.lwjglCanvasElement = document.getElementById("lwjgl");
     (async function () {
-        await cheerpjInit();
+        await cheerpjInit({
+            javaProperties: ["java.library.path=/app/cheerpj-natives/natives"],
+        });
         cheerpjCreateDisplay(800, 600);
+        window.lwjglCanvasElement = document.getElementById("lwjgl");
         await cheerpjRunMain(
             "net.minecraft.Run",
             "/app/play/play.jar:/app/test_natives/windows/lwjgl64.dll"
