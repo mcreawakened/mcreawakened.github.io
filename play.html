@@ -15,9 +15,9 @@
         });
         cheerpjCreateDisplay(800, 600);
         window.lwjglCanvasElement = document.getElementById("lwjgl");
-        await cheerpjRunJar(
+        await cheerpjRunMain(
             "net.minecraft.Run",
-            "/app/play/play.jar:/app/test_natives/windows/lwjgl64.dll",
+            "/app/play/play.jar",
             "--username Steve",
             "--uuid 00000000"
         );
