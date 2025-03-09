@@ -8,6 +8,8 @@
       <section class="left" id="updates">
         <h2><img src="assets/news_icon.png" class="center" style="float:left;" width="40" height="40"> News</h2>
         <p>Releases are not yet final and may contain bugs. Before installation please backup your game instance to avoid data loss.</p>
+          <a href="https://github.com/SF-24/Minecraft-2.0-new/releases/tag/client-v0.3.3b">Snapshot 0.3.3b (Client)</a>
+          <p id="news_033b" class="time">9 March 2025</p>
           <a href="https://github.com/SF-24/Minecraft-2.0-new/releases/tag/client-v0.3.3">Snapshot 0.3.3 (Client)</a>
           <p id="news_033" class="time">9 March 2025</p>
           <a href="https://github.com/SF-24/Minecraft-2.0-server/releases/tag/server-v0.3.3">Snapshot 0.3.3 (Server)</a>
@@ -35,6 +37,7 @@
   document.getElementById("news_032d").innerText=timefrom_032d + getplural(timefrom_032d);
   document.getElementById("news_033_server").innerText=timefrom_033 + getplural(timefrom_033);
   document.getElementById("news_033").innerText=timefrom_033 + getplural(timefrom_033);
+  document.getElementById("news_033b").innerText=timefrom_033 + getplural(timefrom_033);
 
   function getplural(number) {
     if(number !==1) {return " days ago"} else {return " day ago"}
