@@ -8,7 +8,12 @@
       <section class="left" id="updates">
         <h2><img src="assets/news_icon.png" class="center" style="float:left;" width="40" height="40"> News</h2>
         <p>Releases are not yet final and may contain bugs. Before installation please backup your game instance to avoid data loss.</p>
-        <a href="https://github.com/SF-24/Minecraft-2.0-new/releases/tag/client-v0.3.2d">Snapshot 0.3.2d (Client)</a>
+          <a href="https://github.com/SF-24/Minecraft-2.0-new/releases/tag/client-v0.3.3">Snapshot 0.3.3 (Client)</a>
+          <p id="news_033" class="time">9 March 2025</p>
+          <a href="https://github.com/SF-24/Minecraft-2.0-server/releases/tag/server-v0.3.3">Snapshot 0.3.3 (Server)</a>
+          <p id="news_033_server" class="time">9 March 2025</p>
+          <
+          <a href="https://github.com/SF-24/Minecraft-2.0-new/releases/tag/client-v0.3.2d">Snapshot 0.3.2d (Client)</a>
         <p id="news_032d" class="time">26 February 2025</p>
         <a href="https://github.com/SF-24/Minecraft-2.0-server/releases/tag/server-v0.3.2d">Snapshot 0.3.2d (Server)</a>
         <p id="news_032d_server" class="time">26 February 2025</p>
@@ -24,9 +29,13 @@
 <script>
   var today = new Date();
   var date032d = new Date("2025-02-26");
+  var date033 = new Date("2025-03-09");
   var timefrom_032d = Math.round((today - date032d) / (1000 * 60 * 60 * 24));
+  var timefrom_033 = Math.round((today - date033) / (1000 * 60 * 60 * 24));
   document.getElementById("news_032d_server").innerText=timefrom_032d + getplural(timefrom_032d);
   document.getElementById("news_032d").innerText=timefrom_032d + getplural(timefrom_032d);
+  document.getElementById("news_033_server").innerText=timefrom_033 + getplural(timefrom_033);
+  document.getElementById("news_033").innerText=timefrom_033 + getplural(timefrom_033);
 
   function getplural(number) {
     if(number !==1) {return " days ago"} else {return " day ago"}
