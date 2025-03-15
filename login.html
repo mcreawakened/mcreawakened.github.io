@@ -9,13 +9,17 @@
             background-position: center;
         }
 
+        .login_box {
+            border: 0 solid orangered;
+        }
+
     </style>
 </head>
 <body>
 <div id="headerDiv"></div>
 
 <!-- Login section -->
-<div class="login">
+<div class="login login_box" id="login_box">
     <form action="user_sites/auth.html">
     <h3>Log-In to your account</h3><br>
 
@@ -23,9 +27,9 @@
     <input type="login" placeholder="Email" name="usr" id="usr" required><br>
 
     <input type="password" placeholder="Password" name="psw" id="psw" required><br>
+    <p id="login_text" class="login_text"></p>
 
     <button type="submit" class="big_button button_center button--orange">Login</button>
-        <p id="login_text"></p>>
     <br><br>
     <a href="http://mcreawakened.github.io/signup.html">Sign up</a>
     </form>
@@ -62,5 +66,16 @@
         .then((html) => {
             document.getElementById('updateDiv').innerHTML = html
         });
+</script>
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const failed = urlParams.get('failed');
+    if(failed==="true") {
+        document.getElementById("login_text").innerText="Incorrect username or password";
+        document.getElementById("login_text").style.backgroundColor="#bc2b0f"
+        document.getElementById("login_text").borderRadius="0.25em";
+        document.getElementById("login_text").paddingTop="0.25em";
+        document.getElementById("login_text").paddingBottom="0.25em";
+    }
 </script>
 

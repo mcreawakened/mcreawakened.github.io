@@ -12,8 +12,7 @@
             if(data.success==="true") {
                 window.location.replace("/login_success");
             } else {
-                window.location.replace("/login");
-                alert("Incorrect username or password");
+                window.location.replace("/login?failed=true");
             }
         });
 
