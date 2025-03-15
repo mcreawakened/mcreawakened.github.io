@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const secret = urlParams.get('usr');
+        const userId = urlParams.get('psw');
+        $.getJSON(`https://v0-backend-delta-taupe.vercel.app/login?`+userId+`=xp&psw=`+secret, function(data) {
+            document.getElementById("resp").innerText=data.get("secret");
+        });
+
+    </script>
+
+</head>
+<body>
+<p id="resp">none</p>
+</body>
+</html>

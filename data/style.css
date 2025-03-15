@@ -13,6 +13,10 @@
     --padding: 1em;
 }
 
+form {
+    border: none;
+}
+
 
 h2 {
     display: block;
@@ -165,7 +169,6 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
-// Links:
 
 .navigation__logo {
     image-rendering: -moz-crisp-edges;
@@ -192,4 +195,33 @@ footer, header, hgroup, menu, nav, section {
 .time {
     font-size: small;
     color: gray;
+}
+
+/* Full-width inputs */
+input[type=login], input[type=password] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.login {
+    text-align: center;
+}
+
+.button_center {
+    color: var(--color-white);
+    font-weight: bold;
+    text-align: center;
+
+    place-items: center;
+    place-content: center;
+
+    border-radius: 0.25em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
 }

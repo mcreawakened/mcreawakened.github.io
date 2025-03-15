@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <title>Mineshaft</title>
+    <link rel="stylesheet" href="data/style.css">
+    <style>
+        body {
+            background-image: url('https://mcreawakened.github.io/assets/bg.png');
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+    </style>
+</head>
+<body>
+<div id="headerDiv"></div>
+
+<!-- Login section -->
+<div class="login">
+    <form action="user_sites/auth.html">
+    <h3>Log-In to your account</h3><br>
+
+    <label for="usr">Enter login details</label><br><br>
+    <input type="login" placeholder="Email" name="usr" id="usr" required><br>
+
+    <input type="password" placeholder="Password" name="psw" id="psw" required><br>
+
+    <button type="submit" class="big_button button_center button--orange">Login</button>
+        <p id="login_text"></p>>
+    <br><br>
+    <a href="http://mcreawakened.github.io/signup.html">Sign up</a>
+    </form>
+</div>
+
+
+<br><br><br>
+
+<div id="updateDiv"></div>
+<div id="footerDiv"></div>
+</body>
+<script>
+
+
+
+    fetch('https://mcreawakened.github.io/header.html')
+        .then((response) => {
+            return response.text();
+        })
+        .then((html) => {
+            document.getElementById('headerDiv').innerHTML = html
+        });
+    fetch('https://mcreawakened.github.io/footer.html')
+        .then((response) => {
+            return response.text();
+        })
+        .then((html) => {
+            document.getElementById('footerDiv').innerHTML = html
+        });
+    fetch('https://mcreawakened.github.io/updates.html')
+        .then((response) => {
+            return response.text();
+        })
+        .then((html) => {
+            document.getElementById('updateDiv').innerHTML = html
+        });
+</script>
+
