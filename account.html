@@ -22,11 +22,11 @@
 
 <!-- Login section -->
 <div class="login login_box" id="login_box">
-    <form action="user_sites/auth.html">
-    <h3>Log-In to your account</h3><br>
+    <h3>User account</h3><br>
     <p id="usr">Username: {placeholder}</p>
     <br><br>
-    </form>
+    <button class="big_button button_center button--orange" onclick="log_out">Log out</button>
+
 </div>
 
 
@@ -38,5 +38,12 @@
 <script>
     showUser();
     document.getElementById("usr").innerText="Username: " + getCookie("session_user");
+
+    function log_out() {
+        removeCookie("session_id")
+        removeCookie("session_user")
+        removeCookie("session_expiry")
+        window.location.replace("https://mcreawakened.github.io/");
+    }
 </script>
 
