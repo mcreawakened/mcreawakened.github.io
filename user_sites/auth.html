@@ -19,9 +19,9 @@
         const secret = urlParams.get('psw');
         $.getJSON(`https://v0-backend-delta-taupe.vercel.app/login?name=`+userId+`&psw=`+secret, function(data) {
             if(data.success==="true") {
-                setCookie("session_id", data.session_id, 1)
-                setCookie("session_user", userId, 1)
-                setCookie("session_expiry", data.expiry, 1)
+                setCookie("session_id", data.session_id, 0.25)
+                setCookie("session_user", userId, 0.25)
+                setCookie("session_expiry", data.expiry, 0.25)
                 window.location.replace("/login_success");
             } else {
                 window.location.replace("/login?failed=true");

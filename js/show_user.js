@@ -1,16 +1,11 @@
 
 
 function showUser() {
-    let date = localStorage.getItem('session_expiry');
-    // if(date <= Date.now()) {
-    //   localStorage.clear();
-    //   alert("Session expired. Please log in again")
-    // } else {
     let user = getCookie('session_user');
     alert("user: " + user);
     // document.getElementById("account_link").innerText="Account";
     // }
-    if (user != null) {
+    if (user != null && user !== "") {
         fetch('https://mcreawakened.github.io/header_logged_in.html')
             .then((response) => {
                 return response.text();
