@@ -10,6 +10,9 @@
         const secret = urlParams.get('psw');
         $.getJSON(`https://v0-backend-delta-taupe.vercel.app/login?name=`+userId+`&psw=`+secret, function(data) {
             if(data.success==="true") {
+                localStorage.setItem('session_id', data.session_id);
+                localStorage.setItem('session_user', userId);
+                localStorage.setItem('session_expiry', data.expiry);
                 window.location.replace("/login_success");
             } else {
                 window.location.replace("/login?failed=true");

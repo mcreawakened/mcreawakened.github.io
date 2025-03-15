@@ -23,10 +23,23 @@
 
       </div>
       <div class="navigation__links navigation__links--end" aria-label="Account navigation">
+        <div id="account" class="navigation__link">
+          <a class="navigation__link" href="/login">Log in</a>
+        </div>
 
-        <a class="navigation__link" href="/login">Log in</a>
       </div>
     </nav>
   </header>
 </body>
+<script>
+  let date = localStorage.getItem('session_expiry');
+  if(date <= Date.now()) {
+    localStorage.clear();
+    alert("Session expired. Please log in again")
+  } else {
+    let user= localStorage.getItem('session_user');
+    document.getElementById("account").innerHTML = <a className="navigation__link" id="account_link" href=""></a>;
+    document.getElementById("account_link").innerText=user;
+  }h
+</script>
 </html>
