@@ -8,9 +8,30 @@ function showUser() {
     // } else {
     let user= getCookie('session_user');
     alert("user: " + user);
-    document.getElementById("account_link").innerText=user;
-    document.getElementById("account").innerHTML = '<a class="navigation__link" id="account_link" href=""></a>';
+    document.getElementById("account_link").innerText="Account";
     // }
+
+    fetch('https://mcreawakened.github.io/header.html')
+        .then((response) => {
+            return response.text();
+        })
+        .then((html) => {
+            document.getElementById('headerDiv').innerHTML = html
+        });
+    fetch('https://mcreawakened.github.io/footer.html')
+        .then((response) => {
+            return response.text();
+        })
+        .then((html) => {
+            document.getElementById('footerDiv').innerHTML = html
+        });
+    fetch('https://mcreawakened.github.io/updates.html')
+        .then((response) => {
+            return response.text();
+        })
+        .then((html) => {
+            document.getElementById('updateDiv').innerHTML = html
+        });
 }
 
 
