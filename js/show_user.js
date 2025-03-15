@@ -63,7 +63,7 @@ function getCookie(cname) {
 }
 
 function removeCookie(cname) {
-    if( get_cookie( name )!=="" ) {
+    if( getCookie( name )!=="" ) {
         document.cookie = name + "=" +
             ((path) ? ";path="+path:"")+
             ((domain)?";domain="+domain:"") +
