@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <title>Mineshaft</title>
+    <link rel="stylesheet" href="data/style.css">
+    <style>
+        body {
+            background-image: url('https://mcreawakened.github.io/assets/bg.png');
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        .login_box {
+            border: 0 solid orangered;
+        }
+
+    </style>
+    <script type="text/javascript" src="js/show_user.js"></script>
+
+</head>
+<body>
+<div id="headerDiv"></div>
+
+<!-- Login section -->
+<div class="login login_box" id="login_box">
+    <form action="user_sites/auth.html">
+    <h3>Log-In to your account</h3><br>
+    <p id="usr">Username: {placeholder}</p>
+    <br><br>
+    </form>
+</div>
+
+
+<br><br><br>
+
+<div id="updateDiv"></div>
+<div id="footerDiv"></div>
+</body>
+<script>
+    showUser();
+    document.getElementById("usr").innerText="Username: " + getCookie("session_user");
+</script>
+
