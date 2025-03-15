@@ -6,14 +6,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
         const urlParams = new URLSearchParams(window.location.search);
-        const secret = urlParams.get('usr');
-        const userId = urlParams.get('psw');
+        const userId = urlParams.get('usr');
+        const secret = urlParams.get('psw');
         $.getJSON(`https://v0-backend-delta-taupe.vercel.app/login?name=`+userId+`&psw=`+secret, function(data) {
             if(data.success==="true") {
-                window.location.replace("https://mcreawakened.net/logged_in");
+                window.location.replace("/login_success");
             } else {
                 alert("incorrect login data");
-                window.location.replace("https://mcreawakened.net/login");
+                window.location.replace("login");
             }
         });
 
