@@ -9,8 +9,12 @@
         const secret = urlParams.get('usr');
         const userId = urlParams.get('psw');
         $.getJSON(`https://v0-backend-delta-taupe.vercel.app/login?name=`+userId+`&psw=`+secret, function(data) {
-            document.getElementById("resp").innerText=data.success;
-
+            if(data.success==="true") {
+                window.location.replace("https://mcreawakened.net/logged_in");
+            } else {
+                alert("incorrect login data");
+                window.location.replace("https://mcreawakened.net/login");
+            }
         });
 
     </script>

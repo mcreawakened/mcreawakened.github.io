@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    <title>Mineshaft</title>
+    <link rel="stylesheet" href="data/style.css">
+    <style>
+        body {
+            background-image: url('https://mcreawakened.github.io/assets/bg.png');
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+    </style>
+</head>
+<body>
+<div id="headerDiv"></div>
+
+<!-- Login section -->
+<div class="login_success">
+    <h3>Successfully logged in</h3><br>
+</div>
+
+
+<br><br><br>
+
+<div id="updateDiv"></div>
+<div id="footerDiv"></div>
+</body>
+<script>
+
+
+
+    fetch('https://mcreawakened.github.io/header.html')
+        .then((response) => {
+            return response.text();
+        })
+        .then((html) => {
+            document.getElementById('headerDiv').innerHTML = html
+        });
+    fetch('https://mcreawakened.github.io/footer.html')
+        .then((response) => {
+            return response.text();
+        })
+        .then((html) => {
+            document.getElementById('footerDiv').innerHTML = html
+        });
+    fetch('https://mcreawakened.github.io/updates.html')
+        .then((response) => {
+            return response.text();
+        })
+        .then((html) => {
+            document.getElementById('updateDiv').innerHTML = html
+        });
+</script>
+
