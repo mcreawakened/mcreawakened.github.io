@@ -2,7 +2,6 @@
 
 function showUser() {
     let user = getCookie('session_user');
-    alert("user: " + user);
     // document.getElementById("account_link").innerText="Account";
     // }
     if (user != null && user !== "") {
