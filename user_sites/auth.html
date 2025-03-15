@@ -9,7 +9,8 @@
         const secret = urlParams.get('usr');
         const userId = urlParams.get('psw');
         $.getJSON(`https://v0-backend-delta-taupe.vercel.app/login?name=`+userId+`&psw=`+secret, function(data) {
-            document.getElementById("resp").innerText=data.get("secret");
+            document.getElementById("resp").innerText=data.parse().success;
+            
         });
 
     </script>
