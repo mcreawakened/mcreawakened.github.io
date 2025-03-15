@@ -6,18 +6,27 @@ function showUser() {
     //   localStorage.clear();
     //   alert("Session expired. Please log in again")
     // } else {
-    let user= getCookie('session_user');
+    let user = getCookie('session_user');
     alert("user: " + user);
-    document.getElementById("account_link").innerText="Account";
+    // document.getElementById("account_link").innerText="Account";
     // }
-
-    fetch('https://mcreawakened.github.io/header.html')
-        .then((response) => {
-            return response.text();
-        })
-        .then((html) => {
-            document.getElementById('headerDiv').innerHTML = html
-        });
+    if (user != null) {
+        fetch('https://mcreawakened.github.io/header_logged_in.html')
+            .then((response) => {
+                return response.text();
+            })
+            .then((html) => {
+                document.getElementById('headerDiv').innerHTML = html
+            });
+    } else
+        fetch('https://mcreawakened.github.io/header.html')
+            .then((response) => {
+                return response.text();
+            })
+            .then((html) => {
+                document.getElementById('headerDiv').innerHTML = html
+            });
+    }
     fetch('https://mcreawakened.github.io/footer.html')
         .then((response) => {
             return response.text();
