@@ -18,7 +18,7 @@ function showUser() {
             .then((html) => {
                 document.getElementById('headerDiv').innerHTML = html
             });
-    } else
+    } else {
         fetch('https://mcreawakened.github.io/header.html')
             .then((response) => {
                 return response.text();
@@ -27,6 +27,7 @@ function showUser() {
                 document.getElementById('headerDiv').innerHTML = html
             });
     }
+
     fetch('https://mcreawakened.github.io/footer.html')
         .then((response) => {
             return response.text();
@@ -34,6 +35,7 @@ function showUser() {
         .then((html) => {
             document.getElementById('footerDiv').innerHTML = html
         });
+
     fetch('https://mcreawakened.github.io/updates.html')
         .then((response) => {
             return response.text();
