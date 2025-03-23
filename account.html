@@ -40,9 +40,7 @@
     document.getElementById("usr").innerText="Username: " + getCookie("session_user");
 
     function log_out() {
-        removeCookie("session_id")
-        removeCookie("session_user")
-        removeCookie("session_expiry")
+        clearCookies();
         window.location.replace("https://mcreawakened.github.io/");
     }
 </script>

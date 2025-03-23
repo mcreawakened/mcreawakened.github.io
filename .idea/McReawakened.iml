@@ -11,5 +11,6 @@
     <orderEntry type="library" name="cj3loader" level="application" />
     <orderEntry type="library" name="appwrite" level="application" />
     <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="api" level="application" />
   </component>
 </module>

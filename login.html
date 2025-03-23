@@ -15,7 +15,7 @@
 
     </style>
     <script type="text/javascript" src="js/show_user.js"></script>
-
+    <script src="https://www.google.com/recaptcha/api.js" defer></script>
 </head>
 <body>
 <div id="headerDiv"></div>
@@ -31,7 +31,10 @@
     <input type="password" placeholder="Password" name="psw" id="psw" required><br>
     <p id="login_text" class="login_text"> </p>
 
-    <button type="submit" class="big_button button_center button--orange">Login</button>
+    <input type="submit" value="Send" class="g-recaptcha"
+           data-sitekey="6Le3GfYqAAAAAM7gmVuy-izhqMMyIOw8gvbFb7JF" data-callback="submitForm" required>
+
+        <button type="submit" class="big_button button_center button--orange">Login</button>
     <br><br>
     <a href="http://mcreawakened.github.io/signup.html">Sign up</a>
     </form>
@@ -59,4 +62,10 @@
         document.getElementById("login_text").paddingBottom="0.25em";
     }
 </script>
+<script>
+    function submitForm() {
+        document.getElementById("comment-form").submit();
+    }
+</script>
+
 

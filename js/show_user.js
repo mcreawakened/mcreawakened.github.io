@@ -1,5 +1,3 @@
-
-
 function showUser() {
     let user = getCookie('session_user');
     // document.getElementById("account_link").innerText="Account";
@@ -62,10 +60,10 @@ function getCookie(cname) {
     return "";
 }
 
-function removeCookie(cname) {
-    if( getCookie( name )!=="" ) {
-
-        let expires = "expires=Thu, 01 Jan 1970 00:00:01 GMT";
-        document.cookie = name + "=" + "" + ";"+expires + ";path=/";
-    }
+function clearCookies() {
+    document.cookie.split(';').forEach(cookie => {
+        const eqPos = cookie.indexOf('=');
+        const name = eqPos > -1 ? cookie.substring(0, eqPos) : cookie;
+        document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:00 GMT';
+    });
 }
