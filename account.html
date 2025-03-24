@@ -27,7 +27,7 @@
     <p>Capes</p>
     <form>
         <div class="cape_select">
-            <div class="radio">
+            <div id="radio" class="radio">
 
             </div>
             <button class="big_button button_center button--orange" onclick="">Equip Cape</button>
@@ -56,8 +56,7 @@
         newLabel.innerHTML = `
         <input type="radio" name="capes" value="${i.id}">
         ${i.name}`
-
-        form.appendChild(newLabel);
+        document.getElementById("radio").appendChild(newLabel);
 
     }
 
