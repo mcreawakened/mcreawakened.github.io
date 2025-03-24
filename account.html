@@ -47,10 +47,7 @@
 <div id="footerDiv"></div>
 </body>
 <script>
-    const capesJson = '\"capes\":[' +
-        '\"founders_cape\",' +
-        '\"blood_moon_cape\"'
-    ;
+    const capesJson = '{"capes": ["founders_cape","blood_moon_cape"]}';
      let capeArray = JSON.parse(capesJson);
     let form = document.querySelector('#radio')
     for (let i in capeArray.capes) {
