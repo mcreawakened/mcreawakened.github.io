@@ -21,9 +21,9 @@
 
 <!-- Login section -->
 <div class="login login_box" id="login_box">
-    <h3>User account</h3><br>
+    <h3>User account</h3>
     <p id="usr">Username: {placeholder}</p>
-    <br>
+
     <p>Capes</p>
     <form>
         <div class="cape_select">
@@ -47,18 +47,19 @@
 <div id="footerDiv"></div>
 </body>
 <script>
-    const capesJson = '{"capes":[ ' +
-        '{"id":"founders_cape", "name":"founders_cape"}, ' +
-        '{"id":"blood_moon_cape", "name":"blood_moon_cape"}]}';
-     let capeArray = JSON.parse(capes);
+    const capesJson = '\"capes\":[' +
+        '\"founders_cape\",' +
+        '\"blood_moon_cape\"'
+    ;
+     let capeArray = JSON.parse(capesJson);
     for (let i in capeArray.capes) {
          let newLabel = document.createElement('label');
          newLabel.innerHTML = `
-         <input type="radio" name="capes" value="${i.id}">
-        ${i.name}`;
+         <input type="radio" name="capes" value="${i}">
+        ${i}`;
         document.getElementById("radio").innerHTML+=`
-        <input type="radio" name="capes" value="${i.id}">
-        ${i.name}`;
+        <input type="radio" name="capes" value="${i}">
+        ${i}`;
         //.appendChild(newLabel);
 
     }
