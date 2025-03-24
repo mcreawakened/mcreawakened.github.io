@@ -52,11 +52,14 @@
         '{"id":"blood_moon_cape", "name":"blood_moon_cape"}]}';
     // let capeArray = JSON.parse(capes);
     for (let i in capesJson.capes) {
-        let newLabel = document.createElement('label');
-        newLabel.innerHTML = `
+        // let newLabel = document.createElement('label');
+        // newLabel.innerHTML = `
+        // <input type="radio" name="capes" value="${i.id}">
+        // ${i.name}`
+        document.getElementById("radio").innerHTML+=`
         <input type="radio" name="capes" value="${i.id}">
-        ${i.name}`
-        document.getElementById("radio").appendChild(newLabel);
+        ${i.name}`;
+        //.appendChild(newLabel);
 
     }
 
