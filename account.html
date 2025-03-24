@@ -15,7 +15,6 @@
 
     </style>
     <script type="text/javascript" src="js/show_user.js"></script>
-
 </head>
 <body>
 <div id="headerDiv"></div>
@@ -24,6 +23,18 @@
 <div class="login login_box" id="login_box">
     <h3>User account</h3><br>
     <p id="usr">Username: {placeholder}</p>
+    <br><br>
+    <p>Capes</p>
+    <form>
+        <div class="cape_select">
+            <div class="radio">
+
+            </div>
+            <button class="big_button button_center button--orange" onclick="">Equip Cape</button>
+
+
+        </div>
+    </form>
     <br><br>
     <button class="big_button button_center button--orange" onclick="log_out()">Log out</button>
 
@@ -35,6 +46,22 @@
 <div id="updateDiv"></div>
 <div id="footerDiv"></div>
 </body>
+<script>
+    const capesJson = '{"capes":[ ' +
+        '{"id":"founders_cape", "name":"founders_cape"}, ' +
+        '{"id":"blood_moon_cape", "name":"blood_moon_cape"}]}';
+    // let capeArray = JSON.parse(capes);
+    for (let i in capesJson.capes) {
+        let newLabel = document.createElement('label');
+        newLabel.innerHTML = `
+        <input type="radio" name="capes" value="${i.id}">
+        ${i.name}`
+
+        form.appendChild(newLabel);
+
+    }
+
+</script>
 <script>
     showUser();
     document.getElementById("usr").innerText="Username: " + getCookie("session_user");
