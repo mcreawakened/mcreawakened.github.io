@@ -225,3 +225,8 @@ input[type=login], input[type=password] {
     padding-left: 1em;
     padding-right: 1em;
 }
+
+.cape {
+    width: 4%;
+    height: 6.4%;
+}
