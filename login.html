@@ -15,7 +15,15 @@
 
     </style>
     <script type="text/javascript" src="js/show_user.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js" defer></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+    </script>
+    <script type="text/javascript">
+        var onloadCallback = function() {
+            grecaptcha.render('html_element', {
+                '6Le3GfYqAAAAAM7gmVuy-izhqMMyIOw8gvbFb7JF' : 'your_site_key'
+            });
+        };
+    </script>
 </head>
 <body>
 <div id="headerDiv"></div>
@@ -31,11 +39,9 @@
     <input type="password" placeholder="Password" name="psw" id="psw" required><br>
     <p id="login_text" class="login_text"> </p>
 
-    <input type="submit" value="Send" class="g-recaptcha"
-           data-sitekey="6Le3GfYqAAAAAM7gmVuy-izhqMMyIOw8gvbFb7JF" data-callback="submitForm" required>
-
+        <div class="g-recaptcha" data-sitekey="6Le3GfYqAAAAAM7gmVuy-izhqMMyIOw8gvbFb7JF"></div>
         <button type="submit" class="big_button button_center button--orange">Login</button>
-    <br><br>
+        <br><br>
     <a href="http://mcreawakened.github.io/signup.html">Sign up</a>
     </form>
 </div>
