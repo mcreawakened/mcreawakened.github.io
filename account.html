@@ -26,10 +26,14 @@
     <p id="usr">Username: {placeholder}</p>
 
     <p>Capes</p>
-    <form>
+    <form onsubmit="">
         <div class="cape_select">
-            <div id="radio" class="radio">
 
+            <div id="current_cape">
+                <!-- TODO: add current cape display -->
+            </div>
+
+            <div id="radio" class="radio">
             </div>
             <button class="button_center button--orange" onclick="">Equip Cape</button>
 
@@ -45,13 +49,35 @@
 <br><br><br>
 
 <div id="updateDiv"></div>
-<div id="footerDiv"></div>
-</body>
 <script>
-    let form = document.querySelector('#radio')
+
+    // variables
     let session = getCookie('session_id');
     let expiry = getCookie('session_expiry');
+
+
+    // cape submit
+    function capeSubmit() {
+        let name = $("input[type='radio'][name='capes']:checked").val();
+
+        $.getJSON('https://v0-backend-delta-taupe.vercel.app/set_cape?session='+session+'&expiry='+expiry+'&cape='+name, function(data) {
+            if(data.success!=null) {
+                if(data.success === true) {
+                    alert("Cape updates");
+                } else if (data.expired === true) {
+                    alert("Error updating cape. Session expired")
+                } else {
+                    alert("Error updating cape");
+                }
+            }
+        });
+    }
+
+    // cape display
+    let form = document.querySelector('#radio')
+
     $.getJSON('https://v0-backend-delta-taupe.vercel.app/owned_items?session='+session+'&expiry='+expiry, function(data) {
+        // Display capes
         if(data.owned_items!=null) {
             let capeArray = JSON.parse(data.owned_items);
 
@@ -78,6 +104,8 @@
         }
     });
 </script>
+<div id="footerDiv"></div>
+</body>
 <script>
     showUser();
     document.getElementById("usr").innerText="Username: " + getCookie("session_user");
