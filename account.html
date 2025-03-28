@@ -69,7 +69,7 @@
         $.getJSON('https://v0-backend-delta-taupe.vercel.app/set_cape?session='+session+'&expiry='+expiry+'&cape='+name, function(data) {
             if(data.success!=null) {
                 if(data.success === true) {
-                    alert("Cape updates");
+                    alert("Cape updated");
                 } else if (data.expired === true) {
                     alert("Error updating cape. Session expired")
                 } else {
