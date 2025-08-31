@@ -41,7 +41,7 @@ iframe[seamless] {
     background-color: white;
     border: none;
     height: 94vh;
-    width: 100vw;
+    width: 100%;
     padding-top: 0;
     margin-top: -4vh;
 }
