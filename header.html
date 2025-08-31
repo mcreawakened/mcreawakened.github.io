@@ -8,6 +8,12 @@
       background-position: center;
     }
   </style>
+  <script src="jquery.js"></script>
+  <script>
+    $(function(){
+      $("#shared_nav").load("header_links.html");
+    });
+  </script>
 </head>
 <body>
   <header class="header" aria-label="Header">
@@ -16,12 +22,8 @@
       <a class="navigation__home" href="https://mcreawakened.github.io/" title="Homepage" aria-label="Go to homepage">
         <img class="logo" alt="Mineshaft" src="assets/logo.png" height="40" width="248">
       </a>
-      <div class="navigation__links navigation__links--start" aria-label="Site navigation">
-        <a class="navigation__link navigation__link--white" href="">Map</a>
-        <a class="navigation__link navigation__link--white" href="">Map2</a>
-        <a class="navigation__link navigation__link--white" href="">3</a>
+      <div class="shared_nav"></div>
 
-      </div>
       <div class="navigation__links navigation__links--end" aria-label="Account navigation">
         <div id="account" class="navigation__link">
           <a class="navigation__link" id="account_link" href="https://mcreawakened.github.io/login">Log in</a>
