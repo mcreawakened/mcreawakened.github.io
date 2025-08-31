@@ -35,6 +35,14 @@ function showUser() {
         .then((html) => {
             document.getElementById('updateDiv').innerHTML = html
         });
+
+    fetch('https://mcreawakened.github.io/header_links.html')
+        .then((response) => {
+            return response.text();
+        })
+        .then((html) => {
+            document.getElementById('sharedNav').innerHTML = html
+        });
 }
 
 

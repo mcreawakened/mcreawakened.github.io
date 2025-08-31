@@ -10,8 +10,8 @@
   </style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script>
-    $(function(){
-      $("#shared_nav").load("header_links.html");
+    $(document).ready(function () {
+      $("#shared_nav").load("mcreawakened.github.io/header_links.html");
     });
   </script>
 
@@ -23,7 +23,7 @@
       <a class="navigation__home" href="https://mcreawakened.github.io/" title="Homepage" aria-label="Go to homepage">
         <img class="logo" alt="Mineshaft" src="assets/logo.png" height="40" width="248">
       </a>
-      <div class="shared_nav"></div>
+      <div id="sharedNav" class="shared_nav"></div>
 
       <div class="navigation__links navigation__links--end" aria-label="Account navigation">
         <div id="account" class="navigation__link">
