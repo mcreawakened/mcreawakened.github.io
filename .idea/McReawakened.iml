@@ -13,5 +13,6 @@
     <orderEntry type="library" name="jquery" level="application" />
     <orderEntry type="library" name="api" level="application" />
     <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="appwrite" level="application" />
   </component>
 </module>
