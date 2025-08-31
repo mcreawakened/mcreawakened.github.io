@@ -40,10 +40,10 @@ header {
 iframe[seamless] {
     background-color: white;
     border: none;
-    height: 92vh;
+    height: 94vh;
     width: 100vw;
     padding-top: 0;
-    margin-top: -2vh;
+    margin-top: -4vh;
 }
 
 body {
