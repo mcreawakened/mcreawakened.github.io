@@ -37,6 +37,14 @@ header {
 	image-rendering: pixelated;
 }
 
+iframe[seamless] {
+    border: none;
+    height: 90vh;
+    width: 100vw;
+    padding-top: 0;
+    margin: 0;
+}
+
 body {
     margin: 0;
 	
