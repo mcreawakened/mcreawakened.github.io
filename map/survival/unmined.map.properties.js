@@ -8,7 +8,7 @@ var UnminedMapProperties = {
     minRegionZ: -5,
     maxRegionX: 2,
     maxRegionZ: 4,
-    worldName: "jeden_zero_zero_survival",
+    worldName: "Survival",
     background: "",
     markers: new Array(),
     enableGrid: false,

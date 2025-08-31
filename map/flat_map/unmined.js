@@ -754,7 +754,6 @@ class Unmined {
                 minWidth: 200,
             });
             this.olMap.addControl(this.#scaleLine);
-
         }
     }
 
