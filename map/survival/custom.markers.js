@@ -42,187 +42,46 @@ UnminedCustomMarkers = {
 
     markers: [
 
-        // Example 2: Marker with text
-        {
-            x: 0,
-            z: 0,
-            image: "dynmap/world.png",
-            imageAnchor: [0.5, 1],
-            imageScale: 1.0,
-            text: "Spawn",
-            textColor: "black", 
-            offsetX: 0,
-            offsetY: 10,
-            font: "bold 1em Calibri,sans serif",
-        },
-		{
-            x: 186,
-            z: -123,
-            image: "dynmap/lighthouse.png",
-            imageAnchor: [0.5, 1],
-            imageScale: 1.0,
-            text: "Latarnia",
-            textColor: "black", 
-            offsetX: 0,
-            offsetY: 10,
-            font: "bold 1em Calibri,sans serif",
-        },
-		{
-            x: 170,
-            z: 1240,
-            image: "dynmap/minecart.png",
-            imageAnchor: [0.5, 1],
-            imageScale: 1.0,
-            text: "Sawanna",
-            textColor: "black", 
-            offsetX: 0,
-            offsetY: 10,
-            font: "bold 1em Calibri,sans serif",
-        },
-		{
-            x: 181,
-            z: -49,
-            image: "dynmap/minecart.png",
-            imageAnchor: [0.5, 1],
-            imageScale: 1.0,
-            text: "Laboratorium",
-            textColor: "black", 
-            offsetX: 0,
-            offsetY: 10,
-            font: "bold 1em Calibri,sans serif",
-        },
-		{
-            x: 72,
-            z: 92,
-            image: "dynmap/minecart.png",
-            imageAnchor: [0.5, 1],
-            imageScale: 1.0,
-            text: "Rynek Bandycki",
-            textColor: "black", 
-            offsetX: 0,
-            offsetY: 10,
-            font: "bold 1em Calibri,sans serif",
-        },
-		{
-            x: -40,
-            z: 1275,
-            image: "dynmap/minecart.png",
-            imageAnchor: [0.5, 1],
-            imageScale: 1.0,
-            text: "Domek na Równinie",
-            textColor: "black", 
-            offsetX: 0,
-            offsetY: 10,
-            font: "bold 1em Calibri,sans serif",
-        },
-		{
-            x: 165,
-            z: 215,
-            image: "dynmap/minecart.png",
-            imageAnchor: [0.5, 1],
-            imageScale: 1.0,
-            text: "Parlament",
-            textColor: "black", 
-            offsetX: 0,
-            offsetY: 10,
-            font: "bold 1em Calibri,sans serif",
-        },
-		{
-            x: 463,
-            z: -118,
-            image: "dynmap/portal.png",
-            imageAnchor: [0.5, 1],
-            imageScale: 1.0,
-            text: "Portal",
-            textColor: "black", 
-            offsetX: 0,
-            offsetY: 10,
-            font: "bold 1em Calibri,sans serif",
-        },
-		{
-            x: -275,
-            z: -155,
-            image: "dynmap/interchange.png",
-            imageAnchor: [0.5, 1],
-            imageScale: 1.0,
-            text: "Pustynniogród",
-            textColor: "black", 
-            offsetX: 0,
-            offsetY: 10,
-            font: "bold 1em Calibri,sans serif",
-        },
-		{
-            x: -334,
-            z: -615,
-            image: "dynmap/minecart.png",
-            imageAnchor: [0.5, 1],
-            imageScale: 1.0,
-            text: "Lush Caves",
-            textColor: "black", 
-            offsetX: 0,
-            offsetY: 10,
-            font: "bold 1em Calibri,sans serif",
-        },
-		{
-            x: -190,
-            z: -157,
-            image: "dynmap/anchor.png",
-            imageAnchor: [0.5, 1],
-            imageScale: 1.0,
-            text: "Wieża Dzwonowa",
-            textColor: "black", 
-            offsetX: 0,
-            offsetY: 10,
-            font: "bold 1em Calibri,sans serif",
-        },
-		{
-            x: -323,
-            z: -295,
-            image: "dynmap/minecart.png",
-            imageAnchor: [0.5, 1],
-            imageScale: 1.0,
-            text: "Pustynna Świątynia",
-            textColor: "black", 
-            offsetX: 0,
-            offsetY: 10,
-            font: "bold 1em Calibri,sans serif",
-        },
-		{
-            x: -133,
-            z: 1563,
-            image: "dynmap/anchor.png",
-            imageAnchor: [0.5, 1],
-            imageScale: 1.0,
-            text: "Nowy Plac",
-            textColor: "black", 
-            offsetX: 0,
-            offsetY: 10,
-            font: "bold 1em Calibri,sans serif",
-        },
-		{
-            x: 220,
-            z: -6,
-            image: "dynmap/anchor.png",
-            imageAnchor: [0.5, 1],
-            imageScale: 1.0,
-            text: "Krym",
-            textColor: "black", 
-            offsetX: 0,
-            offsetY: 10,
-            font: "bold 1em Calibri,sans serif",
-        },
-		{
-            x: 332.5,
-            z: 139.5,
-            image: "dynmap/anchor.png",
-            imageAnchor: [0.5, 1],
-            imageScale: 1.0,
-            text: "Wenecja",
-            textColor: "black", 
-            offsetX: 0,
-            offsetY: 10,
-            font: "bold 1em Calibri,sans serif",
-        }
+        // World Spawn
+        {x: 0,z: 0,image: "dynmap/world.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Spawn",textColor: "black", offsetX: 0,offsetY: 10,font: "bold 1em Calibri,sans serif",},
+		
+		// Latarnia
+		{x: 186,z: -123,image: "dynmap/lighthouse.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Latarnia",textColor: "black", offsetX: 0,offsetY: 10,font: "bold 1em Calibri,sans serif",},
+		
+		// Portal
+		{x: 463,z: -118,image: "dynmap/portal.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Portal",textColor: "black", offsetX: 0,offsetY: 10,font: "bold 1em Calibri,sans serif",},
+		
+		// Pociągi do latarnii: Wieśniakownia -> Laboratorium -> Rynek Bandycki -> Parlament -> Sawanna -> Domek na Równinie
+		{x: 181,z: -49,image: "dynmap/minecart.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Laboratorium",textColor: "black", offsetX: 0,offsetY: 10,font: "bold 1em Calibri,sans serif",},
+		{x: 72,z: 92,image: "dynmap/minecart.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Rynek Bandycki",textColor: "black", offsetX: 0,offsetY: 10,font: "bold 1em Calibri,sans serif",},
+		{x: 165,z: 215,image: "dynmap/minecart.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Parlament",textColor: "black", offsetX: 0,offsetY: 10,font: "bold 1em Calibri,sans serif",},
+		{x: -40,z: 1275,image: "dynmap/minecart.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Domek na Równinie",textColor: "black", offsetX: 0,offsetY: 10,font: "bold 1em Calibri,sans serif",},
+		{x: 170,z: 1240,image: "dynmap/minecart.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Sawanna",textColor: "black", offsetX: 0,offsetY: 10,font: "bold 1em Calibri,sans serif",},
+
+		// Metro Zachodnie: Pustynniogród -> Pustynna Świątynia -> Lush Caves
+		{x: -323,z: -295,image: "dynmap/minecart.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Pustynna Świątynia",textColor: "black", offsetX: 0,offsetY: 10,font: "bold 1em Calibri,sans serif",},
+		{x: -334,z: -615,image: "dynmap/minecart.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Lush Caves",textColor: "black", offsetX: 0,offsetY: 10,font: "bold 1em Calibri,sans serif",},
+		
+		// Kanał: Chata Pirata -> Latarnia (Więzienie) -> Latarnia (Magazyn) -> Latarnia (Muzeum) -> Latarnia (Kórnik) -> Kanał (Przystanek Podziemny) -> Wieża Dzwonowa -> Pustynniogród
+		{x: 270,z: -185,image: "dynmap/anchor.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Chata Pirata",textColor: "black", offsetX: 0,offsetY: 10,font: "bold 1em Calibri,sans serif",},
+		// Stacje w latarnii nie są zaznaczone
+		{x: -82,z: -157,image: "dynmap/anchor.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Kanał (Przystanek Podziemny)",textColor: "black", offsetX: 0,offsetY: 10,font: "bold 1em Calibri,sans serif",},
+		{x: -190,z: -157,image: "dynmap/anchor.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Wieża Dzwonowa",textColor: "black", offsetX: 0,offsetY: 10,font: "bold 1em Calibri,sans serif",},
+		{x: -275,z: -155,image: "dynmap/interchange.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Pustynniogród",textColor: "black", offsetX: 0,offsetY: 10,font: "bold 1em Calibri,sans serif",},
+		
+		// Porty:
+		// Krym
+		{x: 220,z: -6,image: "dynmap/anchor.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Krym",textColor: "black", offsetX: 0,offsetY: 10,font: "bold 1em Calibri,sans serif",},
+		
+		// Wenecja
+		{x: 332.5,z: 139.5,image: "dynmap/anchor.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Wenecja",textColor: "black", offsetX: 0,offsetY: 10,font: "bold 1em Calibri,sans serif",},
+		
+		// Port pod mostem
+		{x: -237,z: 454,image: "dynmap/anchor.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Port pod mostem",textColor: "black", offsetX: 0,offsetY: 10,font: "bold 1em Calibri,sans serif",},
+		
+		// Nowy plac
+		{x: -133,z: 1563,image: "dynmap/anchor.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Nowy Plac",textColor: "black", offsetX: 0,offsetY: 10,font: "bold 1em Calibri,sans serif",}
+		
 
         // add your markers here
 
