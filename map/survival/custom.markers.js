@@ -55,8 +55,9 @@ UnminedCustomMarkers = {
 		{x: 181,z: -49,image: "dynmap/minecart.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Laboratorium",textColor: "black", offsetX: 0,offsetY: 5,font: "bold 1em Calibri,sans serif",},
 		{x: 72,z: 92,image: "dynmap/minecart.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Rynek Bandycki",textColor: "black", offsetX: 0,offsetY: 5,font: "bold 1em Calibri,sans serif",},
 		{x: 165,z: 215,image: "dynmap/minecart.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Parlament",textColor: "black", offsetX: 0,offsetY: 5,font: "bold 1em Calibri,sans serif",},
-		{x: -40,z: 1275,image: "dynmap/minecart.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Domek na Równinie",textColor: "black", offsetX: 0,offsetY: 5,font: "bold 1em Calibri,sans serif",},
 		{x: 170,z: 1240,image: "dynmap/minecart.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Sawanna",textColor: "black", offsetX: 0,offsetY: 5,font: "bold 1em Calibri,sans serif",},
+		{x: -40,z: 1275,image: "dynmap/minecart.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Domek na Równinie",textColor: "black", offsetX: 0,offsetY: 5,font: "bold 1em Calibri,sans serif",},
+		{x: -417,z: 1275,image: "dynmap/minecart.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Dworzec Zachodni",textColor: "black", offsetX: 0,offsetY: 5,font: "bold 1em Calibri,sans serif",},
 
 		// Metro Zachodnie: Pustynniogród -> Pustynna Świątynia -> Lush Caves
 		{x: -323,z: -295,image: "dynmap/minecart.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Pustynna Świątynia",textColor: "black", offsetX: 0,offsetY: 5,font: "bold 1em Calibri,sans serif",},
