@@ -61,6 +61,7 @@ UnminedCustomMarkers = {
 
 		// Metro Zachodnie: Duży Most -> Pustynniogród -> Pustynna Świątynia -> Lush Caves
 		{x: -393,z: 554,image: "dynmap/minecart.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Bez Nazwy...",textColor: "black", offsetX: 0,offsetY: 5,font: "bold 1em Calibri,sans serif",},
+//		{x: -323,z: -176,image: "dynmap/minecart.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Pustynniogród",textColor: "black", offsetX: 0,offsetY: 5,font: "bold 1em Calibri,sans serif",},
 		// Pustynniogród
 		{x: -323,z: -295,image: "dynmap/minecart.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Pustynna Świątynia",textColor: "black", offsetX: 0,offsetY: 5,font: "bold 1em Calibri,sans serif",},
 		{x: -334,z: -615,image: "dynmap/minecart.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Lush Caves",textColor: "black", offsetX: 0,offsetY: 5,font: "bold 1em Calibri,sans serif",},
