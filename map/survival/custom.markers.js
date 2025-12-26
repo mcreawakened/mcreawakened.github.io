@@ -50,8 +50,9 @@ UnminedCustomMarkers = {
 		
 		// Portal
 		{x: 463,z: -118,image: "dynmap/portal.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Portal",textColor: "black", offsetX: 0,offsetY: 5,font: "bold 1em Calibri,sans serif",},
+		{x: -755,z: -684,image: "dynmap/portal.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Portal",textColor: "black", offsetX: 0,offsetY: 5,font: "bold 1em Calibri,sans serif",},
 		
-		// Pociągi do latarnii: Wieśniakownia -> Laboratorium -> Rynek Bandycki -> Parlament -> Sawanna -> Domek na Równinie
+		// Pociągi do latarnii: Wieśniakownia -> Laboratorium -> Rynek Bandycki -> Parlament -> Sawannowa Wioska -> Domek na Równinie -> Wioska na Równinie n/ż -> Dworzec Zachodni
 		{x: 181,z: -49,image: "dynmap/minecart.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Laboratorium",textColor: "black", offsetX: 0,offsetY: 5,font: "bold 1em Calibri,sans serif",},
 		{x: 72,z: 92,image: "dynmap/minecart.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Rynek Bandycki",textColor: "black", offsetX: 0,offsetY: 5,font: "bold 1em Calibri,sans serif",},
 		{x: 165,z: 215,image: "dynmap/minecart.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Parlament",textColor: "black", offsetX: 0,offsetY: 5,font: "bold 1em Calibri,sans serif",},
@@ -59,8 +60,8 @@ UnminedCustomMarkers = {
 		{x: -40,z: 1275,image: "dynmap/minecart.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Domek na Równinie",textColor: "black", offsetX: 0,offsetY: 5,font: "bold 1em Calibri,sans serif",},
 		{x: -417,z: 1275,image: "dynmap/minecart.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Dworzec Zachodni",textColor: "black", offsetX: 0,offsetY: 5,font: "bold 1em Calibri,sans serif",},
 
-		// Metro Zachodnie: Duży Most -> Pustynniogród -> Pustynna Świątynia -> Lush Caves
-		{x: -393,z: 554,image: "dynmap/minecart.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Bez Nazwy...",textColor: "black", offsetX: 0,offsetY: 5,font: "bold 1em Calibri,sans serif",},
+		// Metro Zachodnie: Dworzec Zachodni -> Dworzec Zachodni (Przystanek Zachodni) -> Lush Caves n/ż -> Duży Most -> Jezioro n/ż -> Pustynniogród -> Pustynna Świątynia -> Lush Caves
+		{x: -393,z: 554,image: "dynmap/minecart.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Równina przy Moście",textColor: "black", offsetX: 0,offsetY: 5,font: "bold 1em Calibri,sans serif",},
 //		{x: -323,z: -176,image: "dynmap/minecart.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Pustynniogród",textColor: "black", offsetX: 0,offsetY: 5,font: "bold 1em Calibri,sans serif",},
 		// Pustynniogród
 		{x: -323,z: -295,image: "dynmap/minecart.png",imageAnchor: [0.5, 1],imageScale: 1.0,text: "Pustynna Świątynia",textColor: "black", offsetX: 0,offsetY: 5,font: "bold 1em Calibri,sans serif",},
