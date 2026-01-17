@@ -11,7 +11,7 @@ var UnminedMapProperties = {
     worldName: "jeden_zero_zero_survival",
     background: "",
     markers: new Array(),
-    enableGrid: false,
+    enableGrid: true,
     showGrid: false,
     centerX: 0,
     centerZ: 0
